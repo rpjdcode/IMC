@@ -1,18 +1,14 @@
 package dad.rubenpablo.imc;
 
-import java.util.concurrent.Callable;
 
 import javafx.application.Application;
 import javafx.beans.binding.Bindings;
-import javafx.beans.binding.BooleanBinding;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.binding.StringExpression;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -106,7 +102,7 @@ public class IMC extends Application{
 		// Agregamos un listener para cuando cambie el valor de la doubleproperty resultado
 		resultado.addListener((o, ov , nv) -> {
 			StringBinding msg;
-			msg = (Double.isNaN(resultado.get()) ? resultado.asString("") : resultado.asString("%.1f"));
+			msg = (Double.isNaN(resultado.get()) ? resultado.asString("") : resultado.asString("%.2f"));
 			resLabel.textProperty().unbind();
 			resLabel.textProperty().bind(msg);
 		});
