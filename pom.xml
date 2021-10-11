@@ -8,7 +8,7 @@
 		<maven.compiler.target>16</maven.compiler.target>
 		<maven.compiler.source>16</maven.compiler.source>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- <exec.mainClass>dad.codesignal.App</exec.mainClass> -->
+		<exec.mainClass>dad.rubenpablo.imc.IMCMain</exec.mainClass>
 	</properties>
   
   	<dependencies>
