@@ -9,4 +9,7 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 .gitattributes
+.settings
+.project
+.classpath
 
